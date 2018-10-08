@@ -1,0 +1,231 @@
+:root {
+    --bordercolor: #e0e0e0;
+    --darkcolor: #212121;
+    --darkborder: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+.divider {
+    background-color: var(--bordercolor);
+}
+nav {
+    overflow: hidden;
+    z-index: 3;
+}
+.sidenav {
+    z-index: 1000;
+}
+
+.brand-logo {
+    margin-left: 10px;
+}
+.carousel {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 350px !important;
+}
+
+.border {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.smbd {
+    width: 25%;
+}
+.social {
+    margin-top: 3px;    
+    height: 100%;
+    margin-right: 25px;
+}
+
+.social a {
+    font-size: 20px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.social a:hover {
+    opacity: .7;
+    background: transparent;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+.about {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+  .trainer {
+      order: 0;
+      min-width: 275px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: flex; 
+      flex-direction: column;
+  }
+.trainer img {
+    height: 400px;
+}
+.trainer a {
+    width: 100%;
+}
+
+.textabout {
+    order: 1;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 2px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+.para {
+    font-size: 16px;
+}
+
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-top: 15px;
+}
+
+.maps {
+    height: 400px;
+    order: 0;
+    min-width: 275px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.contactinfo {
+    order: 1;
+    width: 30%;
+    margin-left: auto;
+    font-size: 16px;
+}
+.info {
+    margin-top: 40px;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+}
+.hours {
+    order: 2;
+    width: 30%;
+    display: flex;
+    margin-left: auto;
+    flex-direction: column;
+
+}
+
+
+/* Modal*/
+
+.formed {
+    margin-top: 25px;
+}
+.modal {width: 65% !important ; height: 55% !important;}
+
+.subbtn {
+    margin-top: 25px;
+}
+
+.datepicker-modal {
+    top: 0 !important;
+    width: 100% !important;
+    height: 450px !important;
+}
+.datepicker-container {
+    height: 100% !important;
+}
+.form-success {
+    position: fixed;
+    bottom: 5px;
+    left: 45px;
+}
+
+.modal-heading {
+    margin-bottom: 25px;
+}
+
+.fa-bars {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 1180px) {
+        .maps {
+            order: 1;
+        }
+        .contactinfo {
+            order: 2;
+            width: 35%;
+            margin-left: 35px;
+        }
+        .hours {
+            order: 0;
+            margin-bottom: 10px;
+            width: 100%;
+            border-bottom: 1px solid var(--bordercolor);
+        }
+        .info {
+            margin-bottom: 10px;
+        }
+}
+
+@media only screen and (max-width: 700px) {
+    .modal {
+        width: 95% !important;
+        height: 95% !important;
+    }
+    .carousel {
+        display: none;
+    }
+    .trainer {
+        order: 0;
+        width: 100%;
+    }
+    .trainer img {
+        margin-left: auto;
+        margin-right: auto;
+        width:275px;
+        height: 325px;
+    }
+    .trainer a {
+        margin-left: auto;
+        margin-right: auto;
+        width: 275px;
+    }
+    .textabout {
+        order: 1;
+        width: 100%;
+    }
+    .maps {
+        width: 100%;
+    }
+    .contactinfo {
+        width: 100%;
+        border-top: solid 1px var(--bordercolor);
+        border-bottom: solid 1px var(--bordercolor);
+        border-radius: 10px;
+        margin-bottom: 25px;
+    }
+}
+
+.giveme {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 22px;
+    text-align: center;
+    width: 100%
+}

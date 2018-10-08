@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Business Mock-up</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper red lighten-2">
+          <a href="#" class="brand-logo">Fetcher's Gym</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+             <li class="social">
+               <a class="fa fa-instagram"></a>
+               <a class="fa fa-facebook"></a>
+               <a class="fa fa-twitter"></a>
+            </li> 
+            <li><a class="modal-trigger" href="#modal1">Make Appointment</a></li>
+            <li><a class="cost gobot">Pricing</a></li>
+            <li><a class="cntact gobot">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    <form class="formed">
+      <div id="modal1" class="modal modalone modal-fixed-footer">
+        <div class="modal-content">
+          <h5 class="modal-heading"><strong>Make an appointment</strong></h5>
+            <div class="row">
+              <div class="col s12">
+                <div class="row">
+                  <div class="input-field col s6">
+                    <input data-name="firstName" placeholder="First Name" id="first_name" type="text" class="validate">
+                    <label for="first_name">First Name</label>
+                  </div>
+                  <div class="input-field col s6">
+                    <input data-name="lastName" id="last_name" type="text" class="validate">
+                    <label for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="input-field col s3">
+                    <input data-name="phone" id="phone" type="number" class="">
+                    <label for="phone">Phone</label>
+                  </div>
+                    <div class="input-field col s9">
+                      <input data-name="email" id="email" type="email" class="validate">
+                      <label for="email">Email</label>
+                      <span class="helper-text" data-error="wrong" data-success="right"></span>
+                    </div>
+                    <input data-name="date" placeholder="Pick a Date" type="text" class="datepicker">
+                    <div class="col s12 success-form"></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="submit" href="#!" class="waves-effect waves-green btn subbtn">Submit</button>
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Click to Close</a>
+        </div>
+      </div>
+    </form>
+
+      <ul class="sidenav" id="mobile-demo">
+          <li><a class="modal-trigger">Make Appointment</a></li>
+          <li class="cntact gobot"><a>Contact us</a></li>
+          <li class="cost gobot"><a>Pricing</a></li>
+        </ul>
+          
+
+      <div class="container">
+          <div class="carousel carousel-slider">
+              <a class="carousel-item" href="#one!"><img src="./images/dl2.jpeg"></a>
+              <a class="carousel-item" href="#two!"><img src="./images/dl.jpeg"></a>
+              <a class="carousel-item" href="#two!"><img src="./images/dl3.jpeg"></a>
+            </div>
+            <div class="divider"></div>
+              <div class="about">
+                <div class="trainer">
+                  <img  src="./images/trainer.jpeg">
+                  <a class="waves-effect waves-light btn">Meet your trainers</a>
+                </div>
+                <div class="textabout">
+                  <div class="para">
+                      <h4>Discipline, Not Regret</h4>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum assumenda iusto sit ullam non nemo quidem sint quibusdam! Aliquid necessitatibus natus debitis cupiditate laborum consequuntur accusamus dolorum ducimus! Architecto assumenda dolor consequatur, voluptates tenetur veniam ipsa nesciunt alias harum quis consequuntur quos saepe unde dignissimos porro fugit! Laborum recusandae, reiciendis vero maxime distinctio quasi consequatur?</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum beatae minus nulla incidunt quas fugit praesentium? Consectetur asperiores nobis debitis facere recusandae quae dolores veritatis cumque. Aperiam quod dolorum dolorem?</p>
+                </div>
+                </div>
+              </div>
+              <div class="divider"></div>
+              <div class="pricing">
+                <h4>Pricing</h4>
+                  <table class="highlight centered">
+                      <thead>
+                        <tr>
+                            <th>Plan</th>
+                            <th>Price</th>
+                            <th>Frequency</th>
+                        </tr>
+                      </thead>
+              
+                      <tbody>
+                        <tr>
+                          <td>Monthly</td>
+                          <td>$22.00</td>
+                          <td>Beginning of every month.</td>
+                        </tr>
+                        <tr>
+                          <td>Six Months</td>
+                          <td>$175.00</td>
+                          <td>Every 6 months.</td>
+                        </tr>
+                        <tr>
+                          <td>Annually</td>
+                          <td>$375.00</td>
+                          <td>Every Year</td>
+                        </tr>
+                      </tbody>
+                    </table>
+              </div>
+              
+              <div class="contact">
+                <div class="maps"></div>
+                <div class="contactinfo">
+                  <h4>Contact Us</h4>
+                  <div class="info">
+                      <h5><strong>Address</strong></h5>
+                      <span>1738 West Blvd Palace, Peruvilla FL</span>
+                      <h5><strong>Call us</strong></h5>
+                      <span>(555) 555-5555</span>
+                      <h5><strong>Email:</strong></h5>
+                      <span>envdia@gmail.com</span>
+                  </div>
+                </div>
+                <div class="hours">
+                  <h4>Staffed Hours</h4>
+                  <div class="info">
+                      <table class="highlight responsive-table">
+                          <thead>
+                              <tr>
+                                  <th>Monday-Friday</th>
+                                  <th>Saturday & Sunday</th>
+                              </tr>
+                            </thead>  
+                        <tr>
+                              <td>9am to 5pm</td>
+                              <td>12pm to 5pm</td>
+                            </tr>
+                        </table>
+                  </div>
+                </div>
+              </div>
+
+      </div>
+      <div class="giveme">Like my work? Contact me at envdia@gmail.com</div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBghJmzrFiYYr4ClicgFYHvN4ubVsnJxuE&callback=initMap" async defer></script>
+<script src="js/model.js"></script>
+</html>
