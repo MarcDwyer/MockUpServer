@@ -153,14 +153,17 @@ const navButtons = document.querySelectorAll('.gobot');
 navButtons.forEach(item => item.addEventListener('click', scroller));
 
 function scroller() {
+
   if (this.classList.value.includes('cntact')) {
     const contactInfo = document.querySelector('.contact');
-    const divHeight = contactInfo.clientHeight;
-    window.scrollTo(0, contactInfo.offsetHeight + (divHeight / 2));
+    contactInfo.querySelector('.info').scrollIntoView({behavior: "smooth"});
+ //   const divHeight = contactInfo.clientHeight;
+  //  window.scrollTo(0, contactInfo.offsetHeight + (divHeight / 2));
   } 
   if (this.classList.value.includes('cost')) {
     const pricingInfo = document.querySelector('.pricing');
-    const divHeight = pricingInfo.clientHeight;
-    window.scrollTo(0, pricingInfo.offsetHeight + (window.innerHeight - divHeight));
+    document.querySelector('.pricing').scrollIntoView({block: "center", behavior: "smooth"});
+  //  const divHeight = pricingInfo.clientHeight;
+  //  window.scrollTo(0, pricingInfo.offsetHeight + divHeight);
   }
 }
