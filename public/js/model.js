@@ -88,13 +88,23 @@ form.addEventListener('submit', subForm);
 
 function subForm(e) {
   e.preventDefault();
+const validation = document.querySelectorAll('[data-invalid]');
 
+let checker;
+
+validation.forEach(item => {
+  if (item.value.length == 0) {
+    item.classList.add('invalid');
+    item.placeholder = 'Cannot be empty';
+    return checker = false;
+  }
+})
+if (!checker) return;
 const inputs = document.querySelectorAll('input');
 let names = [];
 inputs.forEach(input => {
   names.push({name: input.dataset.name, value: input.value});
 })
-
 const userSub = names.reduce((obj, item) => {
   obj[item.name] = item.value;
   return obj;

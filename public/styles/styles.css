@@ -140,7 +140,9 @@ nav {
 .subbtn {
     margin-top: 25px;
 }
-
+.datepicker {
+    margin-top: 10px;
+}
 .datepicker-modal {
     top: 0 !important;
     width: 100% !important;
