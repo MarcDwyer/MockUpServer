@@ -90,7 +90,7 @@ function subForm(e) {
   e.preventDefault();
 const validation = document.querySelectorAll('[data-invalid]');
 
-let checker;
+let checker = true;
 
 validation.forEach(item => {
   if (item.value.length == 0) {
