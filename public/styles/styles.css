@@ -13,8 +13,9 @@ body {
     background-color: var(--bordercolor);
 }
 nav {
-    overflow: hidden;
+    box-shadow: none;
     z-index: 3;
+
 }
 .sidenav {
     z-index: 1000;
