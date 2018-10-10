@@ -122,21 +122,25 @@ const elems = document.querySelector('.modal');
     body: JSON.stringify(userSub)
   });
   const content = await response.json();
-})();
+  if (content) {
+    const successDiv = document.createElement('h5');
+    successDiv.classList.add('form-success')
+    successDiv.textContent = 'Appointment made, thank you';
+    elems.appendChild(successDiv);
 
-if (!form.querySelector('.form-success')) {
-const successDiv = document.createElement('h5');
-successDiv.classList.add('form-success')
-successDiv.textContent = 'Success! See you then!';
-elems.appendChild(successDiv);
-}
-
-
-const instance = M.Modal.getInstance(elems);
-  setTimeout(() => {
+    const instance = M.Modal.getInstance(elems);
+    setTimeout(() => {
     instance.close();
     this.reset();
-  }, 2000)
+  }, 1500)
+  } else {
+    const failedDiv = document.createElement('h5');
+    failedDiv.classList.add('form-success')
+    failedDiv.textContent = 'We seem to be having technical issues... appointment not submitted';
+    elems.appendChild(failedDiv);
+  } 
+})();
+
 }
 
 
